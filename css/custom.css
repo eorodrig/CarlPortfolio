@@ -8,5 +8,6 @@
 
 .PortfolioImage{
 	box-shadow: 3px 3px 6px #18BC9C;
-
+	max-width:300px;
+	max-height:200px;
 }
