@@ -1,0 +1,12 @@
+.ImageHolder {
+	height:250px;
+	overflow: hidden;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+
+.PortfolioImage{
+	box-shadow: 3px 3px 6px #18BC9C;
+
+}
