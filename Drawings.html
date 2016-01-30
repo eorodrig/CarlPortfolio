@@ -15,15 +15,79 @@
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <![endif]-->   
+	<link href="slideshow/js-image-slider.css" rel="stylesheet" type="text/css" />
+    <script src="slideshow/js-image-slider.js" type="text/javascript"></script>
+
+	
+	
 
 </head>
-<body>
+<body class="TestBackground">
 	<div id ="pageMenu">
 	</div>
+
 	
 	<div class="container">
-		<div class="panel panel-default">
+		<div class="panel panel-default DrawingContainer"> 
+			<div class="panel-body">
+				<div class="col-lg-8 col-md-7 col-sm-6">
+					<h1>TEST!!</h1>
+					<p>	Pencil sketches can be of any object, pet or animal.
+						Each sketch is professionally done by hand with different mediums and pencil sizes to achieve high precision.
+						Shading is done in all sketches to provide depth to each sketch.
+					</p>
+					<p>
+						Sizes are fully customizeable and can include: 2x4, 10x10, 20x10...
+						<br>A wide range of mediums can be chosen: paper1, paper2, paper3
+						<br>Pricing varies depending on size, medium and desired image.
+					</p>
+
+				</div>
+				<div class="col-lg-4 col-md-5 col-sm-6 Slideshow" id="testSlideshow">
+				
+												<!--
+							<h1>
+							<div class="TestSlideshowPrev"><span class="glyphicon glyphicon-chevron-left"></span></div>
+							<div class="TestSlideshowNext"><span class="glyphicon glyphicon-chevron-right"></span></div>
+							</h1>
+							-->
+							<img src="./pics/pencil1.jpg" class="SlideshowImage" id="pen1" alt="pencil1" >
+							<img src="./pics/pencil2.jpg" class="SlideshowImage" id="pen2" alt="pencil1" >
+							<img src="./pics/pencil3.jpg" class="SlideshowImage" id="pen3" alt="pencil1" >
+							
+							<!--http://webneel.com/daily/sites/default/files/images/daily/02-2014/9-cat-pencil-drawings.jpg-->
+					
+					
+
+					
+				</div>
+				
+								<div class="col-lg-4 col-md-5 col-sm-6 Slideshow" id="testSlideshow2">
+				
+												<!--
+							<h1>
+							<div class="TestSlideshowPrev"><span class="glyphicon glyphicon-chevron-left"></span></div>
+							<div class="TestSlideshowNext"><span class="glyphicon glyphicon-chevron-right"></span></div>
+							</h1>
+							-->
+							<img src="./pics/canvas1.jpg" class="SlideshowImage" id="pen1" alt="pencil1" >
+							<img src="./pics/canvas2.jpg" class="SlideshowImage" id="pen2" alt="pencil1" >
+							<img src="./pics/canvas3.jpg" class="SlideshowImage" id="pen3" alt="pencil1" >
+							
+							<!--http://webneel.com/daily/sites/default/files/images/daily/02-2014/9-cat-pencil-drawings.jpg-->
+					
+					
+
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class="container">
+		<div class="panel panel-default DrawingContainer"> 
 			<div class="panel-body">
 				<div class="col-lg-8 col-md-6 col-sm-6">
 					<h1>Pencil Sketch</h1>
@@ -37,17 +101,18 @@
 						<br>Pricing varies depending on size, medium and desired image.
 					</p>
 				</div>
-				<div class="col-lg-4 col-md-6 col-sm-6ImageHolder">
+				<div class="col-lg-4 col-md-6 col-sm-6 ImageHolder">
 					<div class="panel-body text-center">
 						<img src="./pics/pencil1.jpg" class="PortfolioImage" alt="pencil1" >
+						<!--http://webneel.com/daily/sites/default/files/images/daily/02-2014/9-cat-pencil-drawings.jpg-->
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 	
-	<div class="container">
-		<div class="panel panel-default">
+	<div class="container DrawingContainer">
+		<div class="panel panel-default DrawingContainer">
 			<div class="panel-body">
 				<div class="col-lg-8 col-md-6 col-sm-6">
 					<h1>Pastel Drawings</h1>
@@ -61,9 +126,10 @@
 						<br>Pricing varies depending on size, medium and desired image.
 					</p>
 				</div>
-				<div class="col-lg-4 col-md-6 col-sm-6ImageHolder">
+				<div class="col-lg-4 col-md-6 col-sm-6 ImageHolder">
 					<div class="panel-body text-center">
 						<img src="./pics/pastel3.jpg" class="PortfolioImage" alt="pastel1" >
+						<!--https://img0.etsystatic.com/000/0/5561079/il_340x270.293740906.jpg-->
 					</div>
 				</div>
 			</div>
@@ -71,7 +137,7 @@
 	</div>
 	
 	<div class="container">
-		<div class="panel panel-default">
+		<div class="panel panel-default DrawingContainer">
 			<div class="panel-body">
 				<div class="col-lg-8 col-md-6 col-sm-6">
 					<h1>Marker Drawing</h1>
@@ -85,9 +151,35 @@
 						<br>Pricing varies depending on size, medium and desired image.
 					</p>
 				</div>
-				<div class="col-lg-4 col-md-6 col-sm-6ImageHolder">
+				<div class="col-lg-4 col-md-6 col-sm-6 ImageHolder">
 					<div class="panel-body text-center">
 						<img src="./pics/marker1.jpg" class="PortfolioImage" alt="marker1" >
+						<!--http://img07.deviantart.net/9d64/i/2011/358/0/4/highlighter_and_marker_drawing_of_a_cat_by_calvincrimson-d4k1nt2.jpg-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="panel panel-default DrawingContainer">
+			<div class="panel-body">
+				<div class="col-lg-8 col-md-6 col-sm-6">
+					<h1>Charcoal Drawing</h1>
+					<p>	Pencil sketches can be of any object, pet or animal.
+						Each sketch is professionally done by hand with different mediums and pencil sizes to achieve high precision.
+						Shading is done in all sketches to provide depth to each sketch.
+					</p>
+					<p>
+						Sizes are fully customizeable and can include: 2x4, 10x10, 20x10...
+						<br>A wide range of mediums can be chosen: paper, canvas, etc.
+						<br>Pricing varies depending on size, medium and desired image.
+					</p>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-6 ImageHolder">
+					<div class="panel-body text-center">
+						<img src="./pics/charcoal1.jpg" class="PortfolioImage" alt="marker1" >
+						<!--http://static.icompendium.com/artistInfo/michaelj/big/56.jpg?0-->
 					</div>
 				</div>
 			</div>
@@ -110,6 +202,8 @@
 <script src="js/disableRightClick.js"></script>
 <!-- Load Master Page Script-->
 <script src="js/loadMaster.js"></script>
+<script src="js/slideshow.js"></script>
+
 </html>
 
 

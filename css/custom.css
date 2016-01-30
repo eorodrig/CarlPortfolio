@@ -7,14 +7,67 @@
 
 
 .PortfolioImage{
-	box-shadow: 3px 3px 6px #18BC9C;
+	box-shadow: 3px 3px 6px #b3b3b3;
 	max-width:300px;
 	max-height:200px;
+	margin-left: auto;
+    margin-right: auto;
 }
 
 
-.MainContainer{
-	padding-top: -200px;
+.DrawingContainer{
+	border-image: url("http://eorodrig.azurewebsites.net/testinglol/pics/frame1.jpg") 30 round;
+	background-image: url("../pics/canvas5s.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-width:390px;
 }
+
+.DrawingBorder{
+	border-image: url("http://eorodrig.azurewebsites.net/testinglol/pics/frame1.jpg") 30 round;
+}
+
+.TestBackground{
+	background-image: url("../pics/canvas3.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.TestSlideshowPrev{
+	vertical-align: middle;
+	 text-align: left;
+}
+
+.TestSlideshowNext{
+	vertical-align: middle;
+	 text-align: right;
+}
+
+
+.SlideshowImage{
+	max-width:310px;
+	height:220px;
+	
+	display: block;
+	
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:15px;
+	margin-bottom:15px;
+	
+	display:hidden;
+}
+
+.Slideshow{
+	box-shadow: 3px 3px 6px #b3b3b3;
+	
+	height:250px;
+	width:340px;
+	overflow: hidden;
+	
+	margin-left: auto;
+    margin-right: auto;
+}
+
 
 	
