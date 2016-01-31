@@ -1,74 +1,76 @@
-var images = $('#testSlideshow').children('img');
-var	imageCount = images.length;
-var currentIndex = 0;
+/* Based from code on: 
+https://www.sitepoint.com/community/t/problem-with-multiple-slideshows-on-the-same-page/36896/2
 
-/**
-This starts the slideshow with a set interval of 2000
-**/
-var slideShow = setInterval(cycleImages, 2000);
-  
 
-/**
-This function hides all images and fetches the next item in the list
-**/
-function cycleImages(){
-	images.hide();
+            function displayNextSlide(slider){
+        var currentImage = slider.find(".currentImage"),
+            nextSlide = (currentImage.next().length === 0)? slider.children(':first') : currentImage.next();
+        
+        currentImage.delay(1500).hide("slide", {direction:"left"}, 500, function(){
+          $(this).removeClass("currentImage");
+          nextSlide.show("slide", {direction:"right"}, 500, function(){
+            $(this).addClass("currentImage");
+            displayNextSlide(slider);
+          });
+        });
+      }
 
-	item = $('#testSlideshow').children('img').eq(currentIndex);
+      function initSlider(slider){
+        var images = slider.find('img');
+        images.first().fadeIn(function(){
+          $(this).addClass("currentImage");
+          displayNextSlide(slider)
+        });
+      }
+
+      $(".slider").each(function(){
+        initSlider($(this));
+      })
+
+	  */
+
+$(".Slideshow").each(function(){
+	
+	start($(this));
+	
+})
+
+
+function start(Slideshow){
+	//we get all images
+	var images = Slideshow.find('img');
+
+	//we show the first imageCount
+	images.first().fadeIn(function(){
+		$(this).addClass("currentImage");
+		displayNextSlide(Slideshow)
+	});
+}
+
+
+function displayNextSlide(Slideshow){
 	
 	
-	item.show();
 	
-	currentIndex++;
-	if (currentIndex==3){
-		currentIndex=0;
-	}
+	
+	var currentSlide = Slideshow.find(".currentImage");
+	var nextSlide = (currentSlide.next().length===0)? Slideshow.children(':first'): currentSlide.next();
+
+	
+	currentSlide.delay(1500).fadeOut(500, function(){
+		$(this).removeClass("currentImage");
+
+		nextSlide.fadeIn(function(){
+		$(this).addClass("currentImage");
+		displayNextSlide(Slideshow)
+		});
+	});
+	
+
 }
 
 
 
-  
-  
-//function cycleItems(){
-//	var item = $('#testSlideshow').children('img').eq(currentIndex);
-//	images.hide();
-//	item.css('display','inline-block');
- //}
 
- //var autoSlide = setInterval(function{currentIndex+=1; cycleItems()}, 3000);
-  
 
-  
-  /*
-function cycleItems() {
-  var item = $('.Slideshow div').eq(currentIndex);
-  items.hide();
-  item.css('display','inline-block');
-}
 
-var autoSlide = setInterval(function() {
-  currentIndex += 1;
-  if (currentIndex > itemAmt - 1) {
-    currentIndex = 0;
-  }
-  cycleItems();
-}, 3000);
-
-$('.next').click(function() {
-  clearInterval(autoSlide);
-  currentIndex += 1;
-  if (currentIndex > itemAmt - 1) {
-    currentIndex = 0;
-  }
-  cycleItems();
-});
-
-$('.prev').click(function() {
-  clearInterval(autoSlide);
-  currentIndex -= 1;
-  if (currentIndex < 0) {
-    currentIndex = itemAmt - 1;
-  }
-  cycleItems();
-});
-*/

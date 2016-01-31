@@ -55,7 +55,8 @@
 	margin-top:15px;
 	margin-bottom:15px;
 	
-	display:hidden;
+	display:none;
+
 }
 
 .Slideshow{
@@ -67,7 +68,9 @@
 	
 	margin-left: auto;
     margin-right: auto;
+	
 }
+
 
 
 	
