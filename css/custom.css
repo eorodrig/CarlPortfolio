@@ -4,12 +4,15 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	min-width:390px;
+	
+	padding-bottom:40px;
 }
 
-.TestBackground{
+Body{
 	background-image: url("../pics/canvas3.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
+	padding-top:60px;
 }
 
 .TestSlideshowPrev{
@@ -48,5 +51,13 @@
 }
 
 
+.PriceTable td
+{
+    padding:0 15px 0 15px;
+	text-align:center;
+}
 
-	
+.PriceTable
+{
+	padding-bottom:30px;
+}
